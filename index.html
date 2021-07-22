@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CV</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="block">
+ <main>
+   <header>
+     <h1>Kravtsova Diana</h1>
+   </header>
+
+<img src="img.png" class="picture" alt="photo">
+
+     <h3>Personal information</h3>
+         <ul>
+             <li>Discord: DianaKr#2668</li>
+             <li>Skype: dayana.kravtsova</li>
+             <li>Email:  kravtsovadiana@mail.ru</li>
+         </ul>
+ </main>
+
+<section>
+    <h3>About me</h3>
+        <p>I am going to become frontend or full-stack developer in order to create sites and applications.
+        <p>I am really enjoy coding and creating something new, that is why I can spend a lot of time for this.
+        <p>I am extremely assiduous, so I will solve the task to the end. I haven't work experience yet, but I am open to learning everything new in IT sphere.</p>
+
+    <h3>Programming languages</h3>
+        <ul class="horizontal">
+            <li>Pascal</li> <li>Delphi</li> <li>Assembler</li>
+            <li>Java</li> <li>C++</li> <li>Actively learn JavaScript</li>
+        </ul>
+
+    <h3>Education</h3>
+        <p>I'm a second-year student of the Gomel State University, Faculty of Mathematics and Programming, specialty computer since and software engineering.</p>
+
+    <h3>English</h3>
+        <p>My level of english is pre-intermediate—intermediate. My team took the nomination "Hot topic" with the project "Cloud Storage and Data Communication Technology" in the competition of educational projects from IBA.</p>
+
+    <h3>Code examples</h3>
+    <h4>JavaScript</h4>
+    <h4>Gravity flip</h4>
+    <pre class="codeBorder">const flip=(d,a)=>{
+        let ans
+        if (d == 'R'){ ans = a.sort((x, y) => x-y) }
+         else if (d == 'L'){ ans = a.sort((x,y) => y-x) }
+        return ans
+}</pre>
+    <h4>Drink about</h4>
+    <pre class="codeBorder">function peopleWithAgeDrink(old) {
+     if (old < 14) {return 'drink toddy'}
+     else if (old < 18) {return 'drink coke'}
+      else if (old < 21) { return 'drink beer'}
+        else return 'drink whisky'
+}</pre>
+    <h4>Expressions Matter</h4>
+    <pre class="codeBorder">function expressionMatter(a, b, c) {
+    let max = Math.max(Math.max(Math.max(a * (b + c), (a + b) * c),
+                                Math.max(a + b * c, a * b + c)),
+                                Math.max(a + b + c, a * b * c))
+        return max
+}</pre>
+</section>
+</div>
+<footer>git:@Diana-Kravtsova, 2021
+    <img src="rs_school_js.svg" class="picture" alt="rs">
+    <link href="https://rs.school/js/">https://rs.school/js/
+</footer>
+</body>
+</html>

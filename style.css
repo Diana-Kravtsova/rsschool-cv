@@ -1,0 +1,41 @@
+.picture{
+    position: relative;
+    height: 300px;
+    width: 250px;
+    float: left;
+    border-radius: 25px;
+    padding-right: 40px;
+}
+.block{
+    background-color: white;
+    width: 800px;
+    padding: 50px;
+    margin: auto;
+    clear: both;
+    border: solid #d09aff 5px;
+    border-radius: 25px;
+}
+ul.horizontal{
+    margin: 0;
+    padding: 5px;
+}
+ul.horizontal li{
+    display: inline;
+    margin: 20px;
+}
+.codeBorder{
+    border: 1px solid #d09aff;
+    padding: 10px;
+}
+header{
+    text-align: center;
+}
+body{
+    background-color: rgba(189, 112, 255, 0.39);
+}
+/*h3, h4{*/
+/*    text-align: center;*/
+/*}*/
+p{
+    text-indent: 30px;
+}
