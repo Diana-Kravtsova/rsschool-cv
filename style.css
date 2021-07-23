@@ -27,6 +27,10 @@ ul.horizontal li{
     border: 1px solid #d09aff;
     padding: 10px;
 }
+.logo {
+    max-height: 150px;
+    max-width:300px;
+}
 header{
     text-align: center;
 }
