@@ -7,12 +7,12 @@
 </head>
 <body>
 <div class="block">
- <main>
-   <header>
-     <h1>Kravtsova Diana</h1>
-   </header>
+    <header class = "header">
+        <h1>Kravtsova Diana</h1>
+    </header>
 
-<img src="img.png" class="picture" alt="photo">
+    <main>
+    <img src="img.png" class="picture" alt="photo">
 
      <h3>Personal information</h3>
          <ul>
@@ -27,21 +27,30 @@
         <p>I am going to become frontend or full-stack developer in order to create sites and applications.
         <p>I am really enjoy coding and creating something new, that is why I can spend a lot of time for this.
         <p>I am extremely assiduous, so I will solve the task to the end. I haven't work experience yet, but I am open to learning everything new in IT sphere.</p>
+</section>
 
+<section>
     <h3>Programming languages</h3>
         <ul class="horizontal">
             <li>Pascal</li> <li>Delphi</li> <li>Assembler</li>
             <li>Java</li> <li>C++</li> <li>Actively learn JavaScript</li>
         </ul>
+</section>
 
+<section>
     <h3>Education</h3>
         <p>I'm a second-year student of the Gomel State University, Faculty of Mathematics and Programming, specialty computer since and software engineering.</p>
+</section>
 
+<section>
     <h3>English</h3>
         <p>My level of english is pre-intermediate—intermediate. My team took the nomination "Hot topic" with the project "Cloud Storage and Data Communication Technology" in the competition of educational projects from IBA.</p>
+</section>
 
+<section>
     <h3>Code examples</h3>
     <h4>JavaScript</h4>
+
     <h4>Gravity flip</h4>
     <pre class="codeBorder">const flip=(d,a)=>{
         let ans
@@ -49,6 +58,7 @@
          else if (d == 'L'){ ans = a.sort((x,y) => y-x) }
         return ans
 }</pre>
+
     <h4>Drink about</h4>
     <pre class="codeBorder">function peopleWithAgeDrink(old) {
      if (old &lt; 14) {return 'drink toddy'}
@@ -56,19 +66,20 @@
       else if (old &lt; 21) { return 'drink beer'}
         else return 'drink whisky'
 }</pre>
+
     <h4>Expressions Matter</h4>
     <pre class="codeBorder">function expressionMatter(a, b, c) {
     let max = Math.max(Math.max(Math.max(a * (b + c), (a + b) * c),
                                 Math.max(a + b * c, a * b + c)),
                                 Math.max(a + b + c, a * b * c))
         return max
-}</pre>
+}   </pre>
 </section>
+    <footer>
+        <a href="https://rs.school/js/"><img src="rs_school_js.svg" class="logo" alt="RSS Logo"></a>
+        <a href="https://github.com/Diana-Kravtsova">GitHub</a>, 2021
+    </footer>
 </div>
-<footer>
-    <img src="rs_school_js.svg" class="logo" alt="RSS Logo">
-    <a href="https://github.com/Diana-Kravtsova">GitHub</a>, 2021
-    <a href="https://rs.school/js/">RS School</a>
-</footer>
+
 </body>
 </html>
