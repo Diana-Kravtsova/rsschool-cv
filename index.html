@@ -3,72 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <title>CV</title>
-  <link href="style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
 <div class="block">
- <main>
-   <header>
-     <h1>Kravtsova Diana</h1>
-   </header>
+    <header class = "center font border-bottom">
+        <div><h1>Kravtsova Diana</h1></div>
+        <div>
+            <ul class="horizontal-ul font">
+                <li><a href="#personal">Personal information</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#languages">Programming languages</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#english">English</a></li>
+                <li><a href="#code">Code examples</a></li>
+                <li><a href="#rs">RSS</a></li>
+            </ul>
+        </div>
+    </header>
 
-<img src="img.png" class="picture" alt="photo">
+    <main>
+        <nav id="personal">
+            <div id="picture"></div>
+            <h3>Personal information</h3>
+            <ul>
+                <li>Discord: DianaKr#2668</li>
+                <li>Linkedin: <a class="black-font" href="https://www.linkedin.com/in/diana-kravtsova-a41336210/">Diana Kravtsova</a></li>
+            </ul>
+        </nav>
+            <section id="about">
+                <h3>About me</h3>
+                <p>I am going to become frontend or full-stack developer in order to create sites and applications.
+                <p>I am really enjoy coding and creating something new, that is why I can spend a lot of time for this.
+                <p>I am assiduous, so I will solve the task to the end. I don't have a work experience yet, but I am open to learn everything new.</p>
+            </section>
 
-     <h3>Personal information</h3>
-         <ul>
-             <li>Discord: DianaKr#2668</li>
-             <li>Skype: dayana.kravtsova</li>
-             <li>Email:  kravtsovadiana@mail.ru</li>
-         </ul>
- </main>
+            <section id="languages" class="left-block border-right">
+                <h3>Programming languages</h3>
+                <div class="skills">
+                    <div class="languages">
+                        <ul>
+                            <li>C++</li>
+                            <li>C</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                        </ul>
+                    </div>
+                    <div class="languages-circles">
+                        <ul>
+                            <li>●●○○○</li>
+                            <li>●○○○○</li>
+                            <li>●●●○○</li>
+                            <li>●●○○○</li>
+                            <li>●○○○○</li>
+                            <li>●○○○○</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
-<section>
-    <h3>About me</h3>
-        <p>I am going to become frontend or full-stack developer in order to create sites and applications.
-        <p>I am really enjoy coding and creating something new, that is why I can spend a lot of time for this.
-        <p>I am extremely assiduous, so I will solve the task to the end. I haven't work experience yet, but I am open to learning everything new in IT sphere.</p>
+            <section id="education" class="right-block line">
+                <h3>Education</h3>
+                <p>I'm a second-year student of the Gomel State University, Faculty of Mathematics and Programming, specialty computer since and software engineering.</p>
+            </section>
 
-    <h3>Programming languages</h3>
-        <ul class="horizontal">
-            <li>Pascal</li> <li>Delphi</li> <li>Assembler</li>
-            <li>Java</li> <li>C++</li> <li>Actively learn JavaScript</li>
-        </ul>
+            <section id="english" class="right-block line">
+                <h3>English</h3>
+                    <p>My level of english is pre-intermediate — intermediate (A2-B1). My team took the nomination "Hot topic" with the project "Cloud Storage and Data Communication Technology" in the competition of educational projects from IBA.</p>
+            </section>
 
-    <h3>Education</h3>
-        <p>I'm a second-year student of the Gomel State University, Faculty of Mathematics and Programming, specialty computer since and software engineering.</p>
+            <section id="code">
+                <h3>Code examples</h3>
+                <h4>JavaScript</h4>
 
-    <h3>English</h3>
-        <p>My level of english is pre-intermediate—intermediate. My team took the nomination "Hot topic" with the project "Cloud Storage and Data Communication Technology" in the competition of educational projects from IBA.</p>
+                <h4>Gravity flip</h4>
+                <pre class="codeBorder">const flip=(d,a)=>{
+                    let ans
+                    if (d == 'R'){ ans = a.sort((x, y) => x-y) }
+                     else if (d == 'L'){ ans = a.sort((x,y) => y-x) }
+                    return ans
+            }</pre>
 
-    <h3>Code examples</h3>
-    <h4>JavaScript</h4>
-    <h4>Gravity flip</h4>
-    <pre class="codeBorder">const flip=(d,a)=>{
-        let ans
-        if (d == 'R'){ ans = a.sort((x, y) => x-y) }
-         else if (d == 'L'){ ans = a.sort((x,y) => y-x) }
-        return ans
-}</pre>
-    <h4>Drink about</h4>
-    <pre class="codeBorder">function peopleWithAgeDrink(old) {
-     if (old &lt; 14) {return 'drink toddy'}
-     else if (old &lt; 18) {return 'drink coke'}
-      else if (old &lt; 21) { return 'drink beer'}
-        else return 'drink whisky'
-}</pre>
-    <h4>Expressions Matter</h4>
-    <pre class="codeBorder">function expressionMatter(a, b, c) {
-    let max = Math.max(Math.max(Math.max(a * (b + c), (a + b) * c),
-                                Math.max(a + b * c, a * b + c)),
-                                Math.max(a + b + c, a * b * c))
-        return max
-}</pre>
-</section>
+                <h4>Drink about</h4>
+                <pre><code class="codeBorder">class tree{
+  constructor(trunks) {
+      this.trunks = trunks;
+      this.branches = trunks * 10;
+      this.twigs = trunks * 100;
+      this.leaves = trunks * 1000;
+  }
+  chopTrunk(n)
+  {
+      this.trunks = Math.max(this.trunks - n, 0)
+      this.chopBranch(n * 10)
+  }
+  chopBranch(n)
+  {
+      this.branches = Math.max(this.branches - n, 0)
+      this.chopTwig(n * 10)
+  }
+  chopTwig(n)
+  {
+      this.twigs = Math.max(this.twigs - n, 0)
+      this.chopLeaf(n * 10)
+  }
+  chopLeaf(n)
+  {
+      this.leaves = Math.max(this.leaves - n, 0)
+  }
+  describe(){
+      return `This tree has ${this.trunks} trunks, ${this.branches} branches, ${this.twigs} twigs and ${this.leaves} leaves.`
+  }
+}</code></pre>
+
+            <h4>Expressions Matter</h4>
+            <pre class="codeBorder">function expressionMatter(a, b, c) {
+            let max = Math.max(Math.max(Math.max(a * (b + c), (a + b) * c),
+                                        Math.max(a + b * c, a * b + c)),
+                                        Math.max(a + b + c, a * b * c))
+            return max
+        }   </pre>
+        </section>
+    </main>
+
+    <footer id="rs">
+        <a href="https://rs.school/js/"><img src="rs_school_js.svg" class="logo" alt="RSS Logo"></a>
+        <a href="https://github.com/Diana-Kravtsova">GitHub</a>, 2021
+    </footer>
 </div>
-<footer>
-    <img src="rs_school_js.svg" class="logo" alt="RSS Logo">
-    <a href="https://github.com/Diana-Kravtsova">GitHub</a>, 2021
-    <a href="https://rs.school/js/">RS School</a>
-</footer>
+<script src="index.js"></script>
 </body>
 </html>
